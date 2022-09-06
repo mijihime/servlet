@@ -1,3 +1,4 @@
+<!-- 2022-09-05 작성 -->
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%!
 	public int add(int num1, int num2) {

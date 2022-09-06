@@ -1,3 +1,4 @@
+<!-- 2022-09-06 작성 -->
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <jsp:include page='4.header.jsp'/>
 <hr>

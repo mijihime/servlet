@@ -1,3 +1,4 @@
+<!-- 2022-09-05 작성 -->
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%-- jsp의 주석 --%>
 <% //scriptlet java, jsp를 나누는 부분

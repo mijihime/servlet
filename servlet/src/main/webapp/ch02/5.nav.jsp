@@ -1,3 +1,4 @@
+<!-- 2022-09-06 작성 -->
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <nav>
 	<a href='5.main.jsp'>메인</a>

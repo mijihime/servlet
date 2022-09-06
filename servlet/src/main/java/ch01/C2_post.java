@@ -1,5 +1,6 @@
+//2022-09-02 작성
 package ch01;
-//2022-09-05 
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -23,3 +24,4 @@ public class C2_post extends HttpServlet{
 		out.printf("<p>%d + %d = %d</p>", num1, num2, num1 + num2);
 	}
 }
+//여기서 시작하면 get할 수 없어서 에러가 뜸. post.java로 가서 실행해야 함
