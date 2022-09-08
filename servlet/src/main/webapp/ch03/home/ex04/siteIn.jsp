@@ -1,8 +1,8 @@
 <%-- 2022-09-07 작성 --%>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<form action='siteProc.jsp' method='post'>
-	<input type='radio' name='web' value='daum'/>DAUM<br>
-	<input type='radio' name='web' value='naver'/>NAVER<br>
+<form action='siteProc.jsp'>
+	<input type='radio' name='site' value='daum'/>DAUM<br>
+	<input type='radio' name='site' value='naver'/>NAVER<br>
 	<input type='submit'/>
 </form>
 <% 
