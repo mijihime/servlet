@@ -4,11 +4,13 @@
 
 session.setAttribute("id", request.getParameter("id"));
 session.setAttribute("pw", request.getParameter("pw"));
-session.getAttribute("id");
-session.getAttribute("pw");
-	if("java" == request.getParameter("id")) {
+String id = (String)session.getAttribute("id");
+String pw = (String)session.getAttribute("pw");
+
+
+	if(id.equals("java") && pw.equals("java")) {
 %>
-	<c:redirect url='https://www.daum.net/'/>
+	<c:redirect url='main.jsp?msg=로그아웃'/>
 
 <% } %>
 

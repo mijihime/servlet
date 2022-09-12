@@ -1,7 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+
 <nav>
 	<a href='logIn.jsp'>로그인</a>
 </nav>
+
+<a href='logout.jsp'>
+<% String msg = request.getParameter("msg"); %>
+ <%= msg != null ? msg : "" %>
+</a>
 
 <!--  
 메인에서 로그인 링크를 누르면, 로그인 폼으로 이동한다. 
