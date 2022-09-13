@@ -1,13 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 
-<nav>
+<%
+	Object userId = session.getAttribute("userId");
+	if(userId == null) {
+%>
 	<a href='logIn.jsp'>로그인</a>
-</nav>
 
-<a href='logout.jsp'>
-<% String msg = request.getParameter("msg"); %>
- <%= msg != null ? msg : "" %>
-</a>
+<%
+	} else {
+%>
+
+		<%= userId %>님, 환영합니다. &nbsp;
+		<a href='logout.jsp'>로그아웃</a>
+<%
+	}
+%>
 
 <!--  
 메인에서 로그인 링크를 누르면, 로그인 폼으로 이동한다. 

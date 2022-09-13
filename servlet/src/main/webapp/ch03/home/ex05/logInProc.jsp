@@ -1,16 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
+	String userId = request.getParameter("userId");
+	String pw = request.getParameter("pw");
 
-session.setAttribute("id", request.getParameter("id"));
-session.setAttribute("pw", request.getParameter("pw"));
-String id = (String)session.getAttribute("id");
-String pw = (String)session.getAttribute("pw");
-
-
-	if(id.equals("java") && pw.equals("java")) {
+	if(userId.equals("java") && pw.equals("java")) {
+		session.setAttribute("userId", userId);
 %>
-	<c:redirect url='main.jsp?msg=로그아웃'/>
+	<c:redirect url='main.jsp'/>
 
-<% } %>
-
+<%
+	} else {
+%>
+	<c:redirect url='logIn.jsp'>
+		<c:param name='msg' value='ID와 PW를 확인해 주세요.'></c:param>
+	</c:redirect>
+	
+<% 
+	} 
+%>

@@ -24,3 +24,5 @@ public class GetPost extends HttpServlet{
 		}
 	
 }
+// java와 html이 섞여있는 스파게티code가 돼서 유지보수에 힘듦
+// 그래서 jsp가 등장하게 됨

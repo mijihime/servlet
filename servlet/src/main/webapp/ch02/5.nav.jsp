@@ -5,3 +5,5 @@
 	<a href='5.first.jsp'>첫째</a>
 	<a href='5.second.jsp'>둘째</a>
 </nav>
+
+<!-- nav는 static하기 때문에 import file로 얻어옴. -->
