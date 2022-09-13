@@ -1,5 +1,4 @@
-<!-- 2022-09-13 작성 장바구니 -->
-<meta charset="utf-8"/>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <h3>상품</h3>
 <form action='cartAddProc.jsp' method='post'>
 	<ul>
