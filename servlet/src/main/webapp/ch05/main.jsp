@@ -4,4 +4,3 @@
 	TodayService todayService = new TodayServiceImpl();
 %>
 <%= todayService.getToday() %>
-<%= todayService.getEmployee(100)%>
