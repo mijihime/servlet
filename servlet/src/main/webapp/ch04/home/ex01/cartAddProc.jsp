@@ -1,29 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
+	String cart = "";
+	Cookie[] cookies = request.getCookies();
+	for(Cookie cookie: cookies)
+		if(cookie.getName().equals("cart"))
+			cart = cookie.getValue();
+	
 	String[] products = request.getParameterValues("product");
-
-	if(products != null) {
-		String cart = "";
-		Cookie cookie = null;
+	if(products != null && products.length > 0) {
+		for(String product: products) 
+			cart += product + "/";
 		
-		if(cart == null) {
-			cart = 
-			cookie = new Cookie("cart", cart);
-			
-		} else {
-			for(String product: products) cart += product + "/";
-		}
-		
+		Cookie cookie = new Cookie("cart", cart);
 		cookie.setMaxAge(60 * 60 * 24 * 7);
 		response.addCookie(cookie);
+	} else {
 %>
-<c:redirect url='cartOut.jsp'/>
+		<c:redirect url='main.jsp'>
+			<c:param name="msg" value='장바구니에 담을 물건을 선택하세요.'/>
+		</c:redirect>
 <%
 	}
 %>
-
-<%-- 
-session은 object로 받았기 때문에 3차원으로 배열을 만들어 값을 넣을 수 
-있었지만, cookie는 text로 받기 때문에 값을 넣을 수 없음. 그래서 붙이기 형식으로 만듦 
---%>
+<c:redirect url='cartOut.jsp'/>

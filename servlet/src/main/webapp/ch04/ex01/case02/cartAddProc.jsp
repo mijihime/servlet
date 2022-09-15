@@ -1,3 +1,4 @@
+<%-- 2022-09-14 작성 --%>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
@@ -17,6 +18,6 @@
 %>
 
 <%-- 
-session은 object로 받았기 때문에 3차원으로 배열을 만들어 값을 넣을 수 
-있었지만, cookie는 text로 받기 때문에 값을 넣을 수 없음. 그래서 붙이기 형식으로 만듦 
+session은 object로 받았기 때문에 3차원으로 배열을 만들어 값을 넣을 수 있었지만, 
+cookie는 text로 받기 때문에 값을 넣을 수 없음. 그래서 붙이기 형식으로 만듦 
 --%>
