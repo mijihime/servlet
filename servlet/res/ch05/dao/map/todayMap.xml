@@ -5,16 +5,4 @@
 	<select id='selectToday' resultType='java.time.LocalDate'>
 		select current_date from dual
 	</select>
-	
-	<select id='selectEmployee' resultMap='employeeMap'>
-		select employee_id, last_name, hire_date
-		from employees
-		where employee_id = #{employeeId}
-	</select>
-	
-	<resultMap id='employeeMap' type='employee'>
-		<id property='employeeId' column='employee_id'/>
-		<result property='employeeName' column='last_name'/>
-		<result property='hireDate' column='hire_date'/>
-	</resultMap>
 </mapper>

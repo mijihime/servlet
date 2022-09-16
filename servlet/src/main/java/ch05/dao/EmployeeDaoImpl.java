@@ -12,7 +12,7 @@ public class EmployeeDaoImpl implements EmployeeDao{
 	}
 	
 	@Override
-	public Employee selectEmployee(int employeeId) {
-		return employeeMap.selectEmployee(employeeId);
+	public Employee selectEmployee(int empId) {
+		return employeeMap.selectEmployee(empId);
 	}
 }
