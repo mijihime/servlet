@@ -11,4 +11,4 @@ ${fruit}
 <c:set var='fruit' scope='session'>머루</c:set>
 <c:set var='fruit' scope='application'>포도</c:set>
 
-<jsp:forward page="5.setOut.jsp"/>
+<jsp:forward page="5.setOut.jsp"/>    
